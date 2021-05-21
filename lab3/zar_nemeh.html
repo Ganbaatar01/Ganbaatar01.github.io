@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LAB3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+	<div class="logo left">
+		<a href="index.html">LAB3</a>
+	</div>
+    <div class="menu right">
+        <ul class="left">
+            <li><a href="index.html">Зарын жагсаалт</a></li>
+            <li><button><a href="zar_nemeh.html">Зар нэмэх</a></button></li>
+        </ul>
+    </div>
+    <div class="clr"></div>    
+    </div>
+</div>
+<div class="zar_body">
+    <div class="container">
+        <div class="zar_nemeh">
+            <h3>Зар нэмэх</h3>
+            <form action="zar_nemeh" method="post">
+                <p>
+                    <label>Зарын гарчиг:
+                        <input type="text" id="garchig" placeholder="Гарчиг" maxlength="40" required>
+                    </label>
+                </p>
+                <p>
+                    <label>Емайл:
+                        <input type="email" id="mail" placeholder="name@domain.com" required>
+                    </label>
+                </p>
+                <p>
+                    <label>Утас:
+                        <input type="tel" id="phone" placeholder="+976-XXXX-XXXX"
+                        pattern="\+\d{3}-+\d{4}-\d{4}" required>
+                    </label>
+                </p>
+                <p>
+                    <label for="txtList">Төрөл:
+                        <input type="text" placeholder="Төрөл" list="type" required>
+                        <datalist id="type">
+                            <option value="Шинэ">
+                            <option value="Хуучин">
+                            <option value="Ашиглалтанд орох гэж байгаа">
+                            <option value="Баригдаж байгаа">
+                        </datalist>
+                    </label>
+                </p>
+                <p>
+                    <label>Байршил:
+                        <input type="text" placeholder="Байршил" maxlength="30" required>
+                    </label>
+                </p>
+                <p>
+                    <label>Ашиглалтанд орсон он сар:
+                        <input type="date" required>
+                    </label>
+                </p>
+                <p>
+                    <label>Тайлбай:
+                        <input type="text" placeholder="мкв" required>
+                    </label>
+                </p>
+                <p>
+                    <label for="txtList">Цонхны тоо:
+                        <input type="text" placeholder="Суудал" list="chair" required>
+                        <datalist id="chair">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="+6">
+                        </datalist>
+                    </label>
+                </p>
+                <p>
+                    <label>Давхар:
+                        <input type="number" 
+                        min="0"
+                        max="20"
+                        value="1" 
+                        required >
+                    </label>
+                </p>
+                <p>
+                    <label>Өрөөний тоо:
+                        <input type="range" required
+                        min="0"
+                        max="6"
+                        value="1">                    
+                    </label>
+                </p>
+                <p>
+                    <label>Дэлгэрэнгүй:
+                        <input type="text" placeholder="Дэлгэрэнгүй" maxlength="100" style="height: 5em;">
+                    </label> 
+                </p>
+                <input class="submit_btn" type="submit" value="Зар Нэмэх">
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+ 
+</body>
+</html>
